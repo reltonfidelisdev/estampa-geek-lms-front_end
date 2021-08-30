@@ -1,0 +1,78 @@
+<div class="col-md-12">
+    <h1>Documentos digitais</h1>
+</div>
+
+<form action="" class="col-md-12 row g-3 mt-3">
+    <div class="col-md-6">
+        <label for="inputDocumento" class="form-label">Faça Upload do documento</label>
+        <input class="form-control" type="file" id="inputDocumento">
+    </div>
+    <div class="col-md-5">
+        <label for="inputTipoDocumento" class="form-label">Tipo de Documento</label>
+        <select id="inputTipoDocumento" class="form-select">
+          <option>RG do Cliente</option>
+          <option>CPF do Cliente</option>
+          <option>RG do Rogado</option>
+          <option>CPF do Rogado</option>
+          <option>Extrato INSS</option>
+          <option>Contra cheque</option>
+          <option selected>Outros</option>
+        </select>
+    </div>
+    <div class="col-md-1">
+        <button type="submit" class="ntb btn btn-primary float-end">Anexar</button>
+    </div>
+</form>
+<div class="col-md-12">
+    <table class="table table-striped table-hover">
+        <thead>
+      <tr>
+        <th scope="col">Documento</th>
+        <th scope="col">Status</th>
+        <th scope="col">Data Digitação</th>
+        <th scope="col">Nome do Cliente</th>
+        <th class="text-end" scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th scope="row">RG do Cliente</th>
+          <th><span class="badge bg-secondary">Enviada</span></th>
+          <td>01/08/2021</td>
+          <td>Relton Lima</td>
+          <td>
+              <button type="button" class="btn btn-danger btn-sm m-lg-1 float-end"><i class="fa fa-trash"></i> Remover</button>
+              <button type="button" class="btn btn-success btn-sm m-lg-1 float-end"><i class="fa fa-eye"></i> Visualizar</button>
+        </tr>
+        <tr>
+          <th scope="row">Contracheque</th>
+          <th><span class="badge bg-success">Aprovado</span></th>
+          <td>01/08/2021</td>
+          <td>Relton Lima</td>
+          <td>
+            <button type="button" class="btn btn-danger btn-sm m-lg-1 float-end"><i class="fa fa-trash"></i> Remover</button>
+            <button type="button" class="btn btn-success btn-sm m-lg-1 float-end"><i class="fa fa-eye"></i> Visualizar</button>
+      </tr>
+        <tr>
+          <th scope="row">CPF do Cliente</th>
+          <th><span class="badge bg-danger">Recusado</span></th>
+          <td>01/08/2021</td>
+          <td>Relton Lima</td>
+          <td>
+            <button type="button" class="btn btn-danger btn-sm m-lg-1 float-end"><i class="fa fa-trash"></i> Remover</button>
+            <button type="button" class="btn btn-success btn-sm m-lg-1 float-end"><i class="fa fa-eye"></i> Visualizar</button>
+      </tr>
+        <tr>
+          <th scope="row">Extrato do INSS</th>
+          <th><span class="badge bg-success">Aprovado</span></th>
+          <td>01/08/2021</td>
+          <td>Relton Lima</td>
+          <td>
+            <button type="button" class="btn btn-danger btn-sm m-lg-1 float-end"><i class="fa fa-trash"></i> Remover</button>
+            <button type="button" class="btn btn-success btn-sm m-lg-1 float-end"><i class="fa fa-eye"></i> Visualizar</button>
+      </tr>
+
+    </tbody>
+  
+    </table>
+</div>
