@@ -1,0 +1,61 @@
+<form class="row g-3 mt-3">
+    <div class="col-md-12">
+        <h1><span class="badge bg-secondary d-grid">Plano de Empréstimo: Cartão de Crédito</span></h1>
+      </div>
+      <div class="col-8">
+        <label for="labelNomeCompleto" class="form-label">Nome Completo</label>
+        <input type="text" class="form-control" disabled id="labelNomeCompleto" placeholder="Relton Fidelis">
+    </div>
+    <div class="col-md-4">
+      <label for="labelCPF" class="form-label">CPF do Cliente</label>
+      <input type="text" mask="CPF_CNPJ" class="form-control" id="labelCPF" disabled placeholder="987.654.321-00">
+    </div>
+    <div class="col-md-4">
+        <label for="inputSexo" class="form-label">Selecione o Produto</label>
+        <select id="inputSexo" class="form-select">
+          <option selected>Selecione ...</option>
+          <option>EMPRÉSTIMO CONSIGNADO INSS</option>
+          <option>EMPRÉSTIMO CONSIGNADO ESTADO</option>
+          <option>3x de R$ ...</option>
+          <option>4x de R$ ...</option>
+          <option>5x de R$ ...</option>
+          <option>6x de R$ ...</option>
+          <option>...</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputValorCredito" class="form-label">Valor do Crédito</label>
+      <input type="text" mask="separator.2" thousandSeparator="," class="form-control" id="inputValorCredito"  placeholder="Ex: 10,350.00">
+    </div>
+    <div class="col-md-4">
+        <label for="inputSexo" class="form-label">Prazo - de 6 a 96 parcelas</label>
+        <select id="inputSexo" class="form-select">
+          <option selected>Selecione ...</option>
+          <option>6x de R$ ...</option>
+          <option>7x de R$ ...</option>
+          <option>8x de R$ ...</option>
+          <option>9x de R$ ...</option>
+          <option>10x de R$ ...</option>
+          <option>...</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="labelDataNascimento" class="form-label">Valor da Parcela</label>
+      <input type="text" class="form-control" id="labelDataNascimento" disabled placeholder="R$ 11,250.00">
+    </div>
+    <div class="col-md-4">
+        <label for="labelTaxaDeJuros" class="form-label">Taxa de Juros</label>
+      <input type="text" class="form-control" id="labelTaxaDeJuros" disabled placeholder="0,99% ao mês">
+    </div>
+    <div class="col-md-4">
+        <label for="labelTaxaDeJuros" class="form-label">Cliente Alfabetizado?</label>
+      <input type="text" class="form-control" id="labelTaxaDeJuros" disabled placeholder="Sim / Não">
+    </div>
+    <div class="col-md-12">
+      <app-documento-digital></app-documento-digital>
+    </div>
+    <div class="col-md-12 padding-footer">
+      <button type="button" class="btn btn-warning float-start" [routerLink]="['/dados-bancarios-pf-pj']">Voltar e Editar</button>
+      <button type="button" class="btn btn-success float-end" [routerLink]="['/enviar-proposta-para-digitar']">Enviar para Digitação</button>
+    </div>
+  </form>

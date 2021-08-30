@@ -1,0 +1,29 @@
+<form class="row g-3 mt-3">
+    <div class="col-md-12">
+        <h1>Teste NGX-Mask</h1>
+    </div>
+    <div class="col-md-2">
+        <label for="inputCPFCNPJ" class="form-label">CPF ou CNPJ</label>
+        <input type="text" mask="CPF_CNPJ" class="form-control" id="inputCPFCNPJ">
+    </div>
+    <div class="col-md-2">
+        <label for="inputTelefoneFixo" class="form-label">Telefone Fixo</label>
+        <input type="text" mask="(00) 0000-0000" class="form-control" id="inputTelefoneFixo">
+    </div>
+    <div class="col-md-2">
+        <label for="inputTelefoneCelular" class="form-label">Telefone Celular</label>
+        <input type="text" mask="(00) 00000-0000" class="form-control" id="inputTelefoneCelular">
+    </div>
+    <div class="col-md-2">
+        <label for="inputTelefoneFixoCelular" class="form-label">Fixo ou Celular</label>
+        <input type="text" mask="(00) 0000-0000 || (00) 00000-0000" class="form-control" id="inputTelefoneFixoCelular">
+    </div>
+    <div class="col-md-2">
+        <label for="inputDiaMesAno" class="form-label">Data Válida D/M/A</label>
+        <input type="text" mask="d0/M0/0000" class="form-control" id="inputDiaMesAno">
+    </div>
+    <div class="col-md-2">
+        <label for="inputReal" class="form-label">Valor R$</label>
+        <input currencyMask formControlName="value" id="inputReal" class="form-control" [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" />
+    </div>
+</form>
